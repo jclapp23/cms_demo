@@ -1,0 +1,23 @@
+Options -MultiViews
+RewriteEngine on
+RewriteCond %{REQUEST_URI} !add-action.php
+RewriteCond %{REQUEST_URI} !add-about-action.php
+RewriteCond %{REQUEST_URI} !add-services-action.php
+RewriteCond %{REQUEST_URI} !add-sub-services-action.php
+RewriteCond %{REQUEST_URI} !delete-action.php
+RewriteCond %{REQUEST_URI} !edit-about-action.php
+RewriteCond %{REQUEST_URI} !edit-about-management-action.php
+RewriteCond %{REQUEST_URI} !edit-contact-action.php
+RewriteCond %{REQUEST_URI} !edit-marketline-action.php
+RewriteCond %{REQUEST_URI} !edit-portfolio-action.php
+RewriteCond %{REQUEST_URI} !edit-services-action.php
+RewriteCond %{REQUEST_URI} !edit-sub-services-action.php
+RewriteCond %{REQUEST_URI} !portfolio-action.php
+RewriteRule ^([^/]+)/?$ index.php?page=$1%{QUERY_STRING} [L,QSA]
+RewriteRule ^construction-project-details/project-id-([0-9]+)/?$ index.php?page=construction-project-details&project_id=$1%{QUERY_STRING} 
+RewriteRule ^prior-stone-masonry-project-portfolio/service-type-([^/]+)/?$ index.php?page=prior-stone-masonry-project-portfolio&filter=$1%{QUERY_STRING} [L,QSA]
+RewriteRule ^construction-project-details/project-id-([0-9]+)/remove-landscape-([0-9]+)/?$ index.php?page=construction-project-details&project_id=$1&remove_landscape=$2%{QUERY_STRING} [L]
+RewriteRule ^construction-project-details/project-id-([0-9]+)/add-landscape-([0-9]+)/?$ index.php?page=construction-project-details&project_id=$1&add_landscape=$2%{QUERY_STRING} [L]
+RewriteRule ^construction-project-details/project-id-([0-9]+)/remove-popular-([0-9]+)/?$ index.php?page=construction-project-details&project_id=$1&remove_popular=$2%{QUERY_STRING} [L]
+RewriteRule ^construction-project-details/project-id-([0-9]+)/add-popular-([0-9]+)/?$ index.php?page=construction-project-details&project_id=$1&add_popular=$2%{QUERY_STRING} [L]
+

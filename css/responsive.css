@@ -1,0 +1,357 @@
+	#facebook{
+		
+		display:none;
+	   }
+	 
+	#mobile_nav{
+		display:none;
+	} 
+	 
+	#phone_home_icon{
+	  	display:none;
+	}
+    .mobile{
+      display:none;
+      width: 768px;
+    } 
+    
+    .mobile #banner_container{float:left}
+    
+    .mobile #social{float:right;}
+	
+	#add_port img{
+		width: 2%;
+	}
+    
+    /* Large desktop */
+    @media (min-width: 1200px) { ... }
+    
+    /* landscape tablet to desktop */
+    @media (min-width: 769px) and (max-width: 979px) { ... }
+    
+    /* portrait tablet */ 
+    @media (max-width: 768px) {
+     
+	html{
+		width: auto;
+	}
+	
+	body
+	{ 
+		margin: 0 auto;
+		width: 768px;
+	}
+	   
+    .main{
+      margin:0px;
+      padding: 0px 0px;
+      width:768px;
+    } 
+	
+	#content{
+		padding: 0px 0px;	
+	}
+	
+	.about-nh-stone-mason-company #about_blurb, #about_blurb{
+	  padding: 0px 20px;
+	}
+     
+       .mobile{display:block}
+    
+       /*hide these elements*/
+       
+       .menu-row-bot,#main_wrap,#popular-project-row{display:none};
+   
+       /*make these elements 100% width*/
+    
+       header,#content,#main-row,#information,footer{width: 768px};
+        
+       /*shrink down header*/
+  
+       #mobile-logo-container {
+        height: auto;
+       }  
+       
+       .wrapper #banner{
+          width: 150px;
+          margin-left: 20px;
+          padding:0px;
+       }
+    
+       /*change nav to vertical */
+
+    .mobile-nav{padding:0px;} 
+    
+    nav {
+        height: auto;
+        width: 768px;
+    }
+    
+       .main nav ul{
+         float:none;
+         width: 100%;
+         padding:0px;
+       }
+    
+       nav ul li{
+         float:none;
+         width: 100%;
+         padding: 0px;
+         margin: 0px;
+       }
+    
+       nav ul li a{
+           border-bottom: 1px solid grey;
+           padding: 10px 0px;
+           margin: 0px;
+           text-align:center;
+       }
+    
+       nav ul li:last-child a{
+         border-bottom:none;
+       
+       }
+	   
+	    .main nav ul ul {
+    	 display: none;
+         background: #5f6975; 
+	     padding: 0;
+         position: absolute; 
+	     top: 39px;
+		 left: 434px;
+		 width: 335px;
+		 
+       }
+	    .main nav ul ul li{
+			width: 162px;
+			float:left;
+			padding: 0px;
+			margin:0px;
+		}
+    
+        nav ul ul li a {
+			padding: 11px 4px;
+		    margin: 0px;
+			font-size: 12px;
+			}
+			
+			
+	     .portfolio_display{
+			 margin:0px;
+			 padding: 40px;
+			 margin: 10px; 
+		 }
+		 
+		 #portfolio-wrapper h1,#portfolio-wrapper label{
+			  margin-left: 10px;
+			 }
+		 footer {
+		 	padding-bottom: 50px;
+		 }
+		 
+		  .float #map_canvas
+		 {
+			width: 95%;
+            height: 350px;
+            margin-top: 40px;
+		 }
+          #about-wrapper h4, #about-wrapper h1, #services-wrapper h1,#contact h1, #contact p{
+		   padding: 10px;
+		  }
+	      
+		 .about_team{
+			padding: 10px; 
+		 }
+		 
+		 #portfolio-wrapper #clear_filter img{
+		   margin-top:20px;
+		 }
+		 
+		  #portfolio-wrapper #filter, #portfolio-wrapper h1
+		  { margin-bottom: 2px;
+		    padding-bottom: 2px;
+		  }
+		 
+		 #add_port img{
+			width: 35px;
+			margin-left:15px;
+		}
+		 
+		 
+	}
+       
+    
+    /* Landscape phones and down */
+    @media (max-width: 568px) { 
+    
+	html{
+		width: auto;
+	}
+	
+	body
+	{ 
+		margin: 0 auto;
+		width: 100%;
+	}
+	   
+    .main{
+      margin:0px;
+      padding: 0px 0px;
+      width:100%;
+    } 
+	
+	#content{
+		padding: 0px 0px;	
+	}
+       .mobile,#mobile_nav{display:block;width:100%;}
+
+    
+       /*hide these elements*/
+       
+       .mobile-nav,#social{display:none};
+   
+       /*make these elements 320px width*/
+    
+       header,#content,#main-row,{width: 100%};
+        
+       /*shrink down header*/
+  
+       #mobile-logo-container {
+        height: auto;
+       }  
+       
+       .wrapper #banner{
+          width: 100px;
+          margin: 10px 10px 10px 10px;
+          padding:0px;
+       }
+		 
+      #phone_home_icon{
+	  	display:block;
+		float:right;
+		width: 45px;
+		height: 45px;
+		margin-top: 10px;
+		margin-right: 5px;
+	  }
+	   #phone_home_icon img{
+	   	width: 100%;
+	   }
+		
+	   #about_blurb p:last-child{
+		    display:none;
+		   }  
+    
+       nav ul li{
+         float:left;
+         width: 25%;
+         padding: 0px;
+         margin: 0px;
+       }
+	   
+	   #mobile_nav ul{
+		padding:0px 0px;   
+		width: 100%;
+	   }
+	   
+	   #mobile_nav{
+			height: 35px;  
+			margin-bottom: 10px; 
+	   }
+    
+       nav ul li a{
+           border-right: 1px solid grey;
+		   border-bottom:none;
+		   border-left:none;
+		   border-top:none;
+           padding: 10px 10px;
+           margin: 0px;
+           text-align:center;
+		   font-size: 70%;
+		   font-weight: bold;
+       }
+    
+       nav ul li:last-child a{
+         border-right:none;
+       }
+	   
+	   .phone{
+		 color: #ccc;
+		 font-size: 70%;   
+	   }
+	   
+       footer{
+	    padding-bottom: 0px;
+		margin-bottom:0px;
+	   }
+	   
+	   #foot_text{
+			font-size: 12px;   
+	   }
+	    .portfolio_display{
+			 margin:0px;
+			 padding: 10px;
+			 margin: 10px; 
+		 }
+		 
+		 #contact-map
+		 {
+			display:none; 
+		 }
+		 #contact .float{
+			float:none;
+			width:90%; 
+		 }
+	   
+	   #facebook{
+		margin-top: 0px;
+		margin-left: 0px;
+		width: 40px;
+		height: 40px;
+		float:left;
+		display:block;
+	   }
+	   
+	     #facebook img{
+		 	width: 100%;
+		 }
+	   
+	    #about-wrapper h4, #about-wrapper h1, #services-wrapper h1{
+		   padding: 0px;
+		  }
+		#services-wrapper h1{
+			margin-top: 30px;
+			margin-left: 10px;	
+		}
+		
+		#contact h1{
+			margin-top: 20px;
+			margin-left: 5px;	
+			margin-bottom: 5px;
+		}
+		
+		#contact p{
+			margin-left: 5px;	
+			margin-top: 0px;
+		}
+		
+		.project_details{
+			margin-left: 10px;	
+		}
+	   
+	   #portfolio-detail-wrapper {
+	   	margin-top:40px;
+	   }
+	   
+	   #portfolio-detail-wrapper h1,#portfolio-detail-wrapper span{
+	   	margin-left:10px;
+	   }
+	   
+	   	select{
+		font-size: 20px;
+		}
+		
+		
+	   
+    }
+  

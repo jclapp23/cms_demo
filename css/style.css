@@ -1,0 +1,567 @@
+@charset "UTF-8";
+/* CSS Document */
+
+
+
+/*INDEX.PHP --------------------------------------------*/
+
+a img {border: none; }
+
+body.home a.home,body.new-hampshire-stone-mason-services a.services,body.prior-stone-masonry-project-portfolio a.portfolio,body.about-masonry-construction-management-team a.about,body.about-nh-stone-mason-company a.about,body.new-hampshire-stone-mason-contact a.contact{
+  color:white;
+}
+
+h2{ margin:0px;
+  text-shadow: 0 0 12px white;
+}
+
+h1{
+  text-shadow: 4px 4px 2px rgba(150, 150, 150, 1);
+}
+
+html {
+    width: 100%;
+    margin:0px;
+    padding: 0px;
+}
+
+body{
+    font-family: ComfortaaRegular, Helvetica, sans-serif;
+    font-size: 100%;
+    color: #030303;
+    width: 100%;
+    margin:0px;
+    padding: 0px;
+}
+
+.main{
+    width: 960px;
+    padding: 0;
+    margin: 0 auto;
+    background: #ccc;
+}
+
+#main_wrap{
+    background-color: white;
+}
+
+label.error{
+  display:block;
+  color:red;
+  max-width: 205px;
+}
+
+.icon{
+  width:16px;
+  height:16px;
+}
+
+/*HEADER.PHP---------------------------------------*/
+   
+ header .main, .home #main_wrap{
+    background: #1f2225;
+    background-image: url("http://www.greatescapespatio.com/images/zenbg.png");
+    
+}
+  
+nav{
+    width: 700px;
+    margin:0 auto;
+
+}
+
+nav ul ul {
+    display: none;
+    background: #5f6975; 
+	padding: 0;
+    position: absolute; 
+	top: 100%;
+}
+    nav ul ul li {
+        float: none; 
+        border-top: 1px solid #6b727c;
+        border-bottom: 1px solid #575f6a;
+        position: relative;
+    }
+        nav ul ul li a {
+            padding: 15px 40px;
+            color: #fff;
+        }   
+            nav ul ul li a:hover {
+                background: #4b545f;
+            }
+
+    nav ul li:hover > ul {
+        display: block;
+    }
+
+nav ul {
+    background: black; 
+    padding: 0 20px;
+    list-style: none;
+    position: relative;
+    display: inline-table;
+}
+    nav ul:after {
+        content: ""; clear: both; display: block;
+    }
+
+nav ul li {
+    float: left;
+}
+    nav ul li:hover {
+        background: #4b545f;
+    }
+        nav ul li:hover a {
+            color: #fff;
+        }
+   .phone:hover {
+       background-color:black;
+    }
+       .phone:hover{
+           color: #ac003e !important;
+        }
+.phone {
+  color: #ac003e;
+}
+
+    nav ul li a {
+        display: block; 
+        padding: 16px 20px;
+        color: #999999; 
+        text-decoration: none;
+        text-transform:uppercase;
+    } 
+
+
+.menu-row-top, .menu-row-top .main{
+    background: black;
+}
+     
+table{
+  color:white !important;
+}
+   
+.wrapper #banner{
+    width: 180px;
+    margin: 10px 20px 20px 30px;
+}
+
+#logo-div{
+    height:100px;
+}
+
+.menu-row-bot{
+    background-image:url('http://www.greatescapespatio.com/images/background-top.jpg');
+    background-repeat:repeat-x;
+    height: 100px;
+}
+
+.menu-row-bot #social{
+    float: right;
+    font-size: 15px;
+    padding-top: 20px;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+
+.menu{
+  padding-top: 0px !important;
+  padding-bottom: 0px !important;
+  margin-top:0px !important;
+  margin-bottom: 0px !important;
+  
+}
+
+
+/*HOME.PHP---------------------------------------*/
+
+
+#gallery_wrapper{
+    width:700px;
+    height:350px;
+    margin: 0 auto;
+}
+
+#main-row{
+        background-image: url("http://www.greatescapespatio.com/images/background-bottom.jpg");
+        background-repeat:repeat-x;
+}
+
+#home-marketing-info{
+    float:right;
+    margin-right: 10px;
+}
+
+#home-marketing-info #main_line1{
+    color: white;
+    text-transform:uppercase;
+    margin-top:15px;
+    font-size: 20px;
+
+}
+#home-marketing-info #main_line2{
+    color: #ac003e;
+    font-size:16px;
+    font-family: 'Cherry Swash', cursive;
+
+}
+#home-marketing-info #main_line3{
+    color: grey;
+}
+
+
+
+#popular-project-row{
+    width: 100%;
+     background: #ccc;
+	 	-webkit-box-shadow: 0 4px 3px -3px black;
+	   -moz-box-shadow: 0 4px 3px -3px black;
+	        box-shadow: 0 4px 3px -3px black;
+}
+
+#popular-project-row .main{
+	background: none;
+}
+    
+#popular-slider-wrapper{
+    width: 940px;
+    height: 220px;
+    background:white;
+    margin: 0 auto 20px;
+    border-radius: 10px;
+   -webkit-box-shadow: 7px 7px 5px rgba(50, 50, 50, 0.75);
+-moz-box-shadow:    7px 7px 5px rgba(50, 50, 50, 0.75);
+box-shadow:         7px 7px 5px rgba(50, 50, 50, 0.75);
+}
+
+#information .main{
+	margin-top: 5px;	
+}
+
+#popular_projects{
+    padding: 5px 0px;
+}
+
+#popular_projects h1{
+  color:black;
+}
+
+#slider img{
+  height:210px;
+  width: 306px;
+  padding: 2px;
+}
+
+#slider p{
+    display:inline;
+    color: black;
+}
+
+#slider div{
+  margin-top: 3px;
+  margin-left:4px;
+  width: 930px;
+    height: 210px;
+}
+
+.flexslider img{
+ border:0px; 
+}
+
+
+/*ABOUT.PHP--------------------------------------------------*/
+
+.about-nh-stone-mason-company #about_blurb {
+width: auto;
+padding: 0px 0px 10px 0px;
+line-height: 1.3;
+float:none;
+text-align: justify;
+}
+
+#about_blurb{
+    width: auto;
+    float:left;
+    padding:10px 100px 10px 100px;
+    line-height:1.3;
+    text-align:justify;
+}
+
+#about-team-wrapper{
+   background-color:white;
+}
+
+#services h1,#about_blurb h1{
+ margin-bottom: 0px; 
+ display:inline-block;
+}
+
+#services ul{
+  list-style-type: square;
+}
+
+#information{
+     background-color: white;
+     color: black;
+}
+
+#about-wrapper{
+    background-color:white;
+}
+
+.p{
+  height:405px;
+  width:951px;
+  resize: false;
+}
+
+.about_team img{
+ float:left;
+  margin-right:10px;
+  margin-bottom: 5px;
+}
+
+.about_team{
+ line-height:1.3;
+    text-align:justify;
+}
+
+/*CONTACT.PHP---------------------------------------*/
+
+#contact-wrapper{
+    background-color:white;
+}
+
+.clear{
+    clear:both;
+}
+#comments{
+  width: 235px;
+  resize: false;
+}
+
+.new-hampshire-stone-mason-contact #contact{
+  background-color: white;
+}
+
+.new-hampshire-stone-mason-contact h1{
+margin:20px 0px;
+padding:0px;
+}
+
+#contact .float{
+  width:50%;
+}
+
+#contact{
+ line-height: 1.3; 
+}
+
+.contact_headings{
+  list-style:none;
+  font-weight: 600;
+}
+
+.contact_sub_headings{
+  font-weight: 500;
+  list-style: disc;
+}
+#map_canvas{
+	width: 100%;
+    height: 350px;
+   margin-top: 20px;
+   margin-bottom:10px;
+}
+/*PORTFOLIO.PHP---------------------------------------*/
+
+#portfolio-wrapper{
+    background-color:white;
+}
+
+#portfolio-wrapper h1{
+  display:inline-block;
+}
+
+.portfolio_display{
+        display:inline-block;
+        padding: 10px;
+        width:280px;
+        min-height: 360px;
+        margin-right:10px;
+        margin-bottom: 10px;
+        font-size: 15px;
+        line-height:1.1;
+        text-align:justify;
+        border: 1px solid black;
+        -webkit-box-shadow: 7px 7px 5px rgba(50, 50, 50, 0.75);
+        -moz-box-shadow:    7px 7px 5px rgba(50, 50, 50, 0.75);
+        box-shadow:         7px 7px 5px rgba(50, 50, 50, 0.75);
+        border-radius: 3px; 
+        float:left; 
+}
+
+.portfolio_label{
+    font-weight: bold;
+}
+
+#filter{
+ margin-bottom: 20px; 
+}
+
+/*PROJECT-DETAIL.PHP---------------------------------------*/
+
+#portfolio-detail-wrapper{
+    background-color:white;
+}
+
+#portfolio-wrapper h2{
+    display:inline-block;  
+}
+
+.project_detail .icon{
+  width:50px;
+  height:40px;
+}
+
+.project_details{
+        display:inline-block;
+        padding: 10px;
+        margin-left: 30px;
+        margin-right:0px;
+        margin-bottom: 30px;
+        border: 1px solid black;
+        -webkit-box-shadow: 7px 7px 5px rgba(50, 50, 50, 0.75);
+        -moz-box-shadow:    7px 7px 5px rgba(50, 50, 50, 0.75);
+        box-shadow:         7px 7px 5px rgba(50, 50, 50, 0.75);
+
+}
+
+/*ADD NEW.PHP---------------------------------------*/
+
+#addnew-wrapper{
+    background-color:white;
+}
+
+.add #clear_filter{
+  display:none;
+}
+
+/*LOGIN.PHP---------------------------------------*/
+
+#login-wrapper{
+    background-color:white;
+}
+
+/*FOOTER.PHP---------------------------------------*/
+
+footer{
+    padding:5px 0px;
+  font-size: 12px;
+  margin-top:2px;
+  background-image: linear-gradient(bottom, rgb(255,255,255) 6%, rgb(166,166,166) 100%);
+background-image: -o-linear-gradient(bottom, rgb(255,255,255) 6%, rgb(166,166,166) 100%);
+background-image: -moz-linear-gradient(bottom, rgb(255,255,255) 6%, rgb(166,166,166) 100%);
+background-image: -webkit-linear-gradient(bottom, rgb(255,255,255) 6%, rgb(166,166,166) 100%);
+background-image: -ms-linear-gradient(bottom, rgb(255,255,255) 6%, rgb(166,166,166) 100%);
+
+background-image: -webkit-gradient(
+	linear,
+	left bottom,
+	left top,
+	color-stop(0.06, rgb(255,255,255)),
+	color-stop(1, rgb(166,166,166))
+);
+
+}
+
+footer .main{
+    color: black;
+    text-align: center;
+    background: none;
+}
+
+#web-design{
+  margin-top: 20px;
+}
+
+#foot_text{
+	font-size: 14px;	
+}
+
+
+/*EDIT MARKETLINE.PHP---------------------------------------*/
+#edit-marketline{
+ background: white; 
+}
+
+/*SERVICES.PHP---------------------------------------*/
+#services-wrapper{
+  background-color:white;
+}
+
+.service_columns{
+ width: 308px;
+ margin: 4px;
+-webkit-border-image: none;
+-webkit-box-shadow: rgba(0, 0, 0, 0.0470588) 0px 1px 1px 0px inset;
+background-color: rgb(245, 245, 245);
+border-bottom-color: rgb(227, 227, 227);
+border-bottom-left-radius: 3px;
+border-bottom-right-radius: 3px;
+border-bottom-style: solid;
+border-bottom-width: 1px;
+border-left-color: rgb(227, 227, 227);
+border-left-style: solid;
+border-left-width: 1px;
+border-right-color: rgb(227, 227, 227);
+border-right-style: solid;
+border-right-width: 1px;
+border-top-color: rgb(227, 227, 227);
+border-top-left-radius: 3px;
+border-top-right-radius: 3px;
+border-top-style: solid;
+border-top-width: 1px;
+box-shadow: rgba(0, 0, 0, 0.0470588) 0px 1px 1px 0px inset;
+
+/*border-top: 4px solid #E0E0E0;
+border-left: 4px solid #DDDDDD;
+border-bottom: 4px solid #CCCCCC;
+border-right: 4px solid #BBBBBB;
+background-color: #d00;
+background-image: url(images/brick.jpg);  
+color: black;  
+margin:0px; 
+line-height: 1.5;
+float:left;
+font-weight: 500;  
+*/
+}
+
+.float{
+ float:left; 
+}
+
+#services{
+ font-size: 13px; 
+}
+.edit-service #edit-services,.add-sub-services #add-sub-services,.add-services #add-services,.edit-sub-service #edit-sub-services,.edit-about #edit-about,.edit-portfolio #edit-portfolio-wrapper,.edit-contact #edit-contact,.edit-about-management #edit-about{
+  background:white !important;
+}
+
+.main_service{
+  list-style:none;
+  font-size: 15px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.sub_service{
+   list-style:circle;
+   font-size: 15px;
+   margin: 3px;
+   text-decoration: none;
+   font-weight: 500;
+}
+
