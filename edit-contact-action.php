@@ -15,13 +15,13 @@ require_once __DIR__.'/classes/config.php';
     {
       echo "The content has been updated successfully.";
       echo "<br/>";
-      echo "<a href='".$home_url."new-hampshire-stone-mason-contac/'>Go back to contact page.</a>";
+      echo "<a href='".$home_url."new-hampshire-stone-mason-contact/'>Go back to contact page.</a>";
     }
     else
     {
       echo "The was an error attempting to update the content.";
       echo "<br/>";
-      echo "<a href='".$home_url."new-hampshire-stone-mason-contac/'>Go back to contact page and try again.</a>";
+      echo "<a href='".$home_url."new-hampshire-stone-mason-contact/'>Go back to contact page and try again.</a>";
     }
   
  ?>
