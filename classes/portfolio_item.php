@@ -163,8 +163,8 @@ static public function getPortfolioList()
       );
 
       //add row to table
-      if($db->insert($table, $params)){
-        return true;
+      if($id = $db->insert($table, $params)){
+        return $id;
       }else{
         return false;
       }
@@ -188,7 +188,7 @@ static public function getPortfolioList()
       //pass field names and content into $params array
       $params = array(
         'image_location'=>$image_location,
-        'project_id'=>$project_id,
+        'project_id'=>$project_id
       );
 
       //add row to table
