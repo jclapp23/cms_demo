@@ -107,7 +107,7 @@ static public function getPortfolioList()
     $params = array('project_id'=>$project_id);
 
     //build PDO query to select all about paragraphs
-    $query = "SELECT * FROM images WHERE project_id=:project_id LIMIT 1";
+    $query = "SELECT * FROM images WHERE project_id=:project_id";
 
     //fetch array of objects from database 
     $result = $db->fetchAll($query, $params);
@@ -122,11 +122,11 @@ static public function getPortfolioList()
         $db = new Database();  
 
      //pass project id arguement into PDO params array
-      $params = array('project_id'=>$project_id);
+      $params = array('id'=>$project_id);
 
       //build query to select image record based on project id
      //limit one so only first image is pulled
-      $query = "SELECT * FROM portfolio WHERE id=:project_id LIMIT 1";
+      $query = "SELECT * FROM portfolio WHERE id=:id LIMIT 1";
 
       //fetch row from array 
       $row = $db->fetch($query, $params);
@@ -178,7 +178,7 @@ static public function getPortfolioList()
    * @return int The newly created project_id
    */
   
-  static public function addImageForNewItem($image_location,$project_id)
+  static public function addImageForNewItem($image_location,$id)
   {  
         $db = new Database();  
 
@@ -188,7 +188,7 @@ static public function getPortfolioList()
       //pass field names and content into $params array
       $params = array(
         'image_location'=>$image_location,
-        'project_id'=>$project_id
+        'project_id'=>$id
       );
 
       //add row to table
