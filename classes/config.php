@@ -3,8 +3,8 @@
 //database configs
 define('HOST', 'mysql.jmcdesignstudios.com');
 define('PORT', NULL);
-define('USERNAME', 'jclapp23');
-define('PASSWORD', '722c722c');
+define('USERNAME', 'xxxx');
+define('PASSWORD', 'xxxxx');
 define('DATABASE', 'cms_demo_db');
 
 //home url definition
