@@ -35,7 +35,7 @@ require_once __DIR__.'/classes/fixMagicQuotes.php';
 //set timezone
 date_default_timezone_set('America/New_York');
 //errors off in production 
-ini_set('display_errors','off');  
+ini_set('display_errors','on');  
 //set home url to the value defined in the classes/config.php script
 $home_url = HOME;
 
@@ -72,8 +72,8 @@ $home_url = HOME;
     //    Scripts
     //
     ///////////////////////////////////////////////////////////////////////////////////////////////////-->  
-	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
-    <script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.9.2/jquery-ui.min.js"></script>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.2/jquery-ui.min.js"></script>
     <!--<script src="http://code.jquery.com/mobile/1.3.0/jquery.mobile-1.3.0.min.js"></script>--> 
 	<script type="text/javascript" src="<?php echo $home_url;?>js/modernizr.custom.47805.js"></script>
     <script type="text/javascript" src="<?php echo $home_url;?>js/jquery-validate.js"></script>

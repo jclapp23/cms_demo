@@ -165,13 +165,13 @@ static public function updateServiceKeyword($id,$keyword)
    
   static public function getServiceKeyword($id)
     {  
-            //create new PHP database object (PDO)
+      //create new PHP database object (PDO)
       $db = new Database();
      //pass project id arguement into PDO params array
-      $params = array('project_id'=>$id);
+      $params = array('id'=>$id);
 
       //build query to select single service keyword from database
-      $query = "SELECT * FROM porfolio WHERE project_id=:id LIMIT 1";
+      $query = "SELECT * FROM portfolio WHERE id=:id LIMIT 1";
 
       //fetch row from array 
       $row = $db->fetch($query, $params);

@@ -19,9 +19,7 @@
     
     .mobile #social{float:right;}
 	
-	#add_port img{
-		width: 2%;
-	}
+	
     
     /* Large desktop */
     @media (min-width: 1200px) { ... }

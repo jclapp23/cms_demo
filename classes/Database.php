@@ -41,7 +41,7 @@ class Database {
      * @return PDOStatement
      */
     public function fetch($query, $params) {
-        $stmt = $this->pdo->prepare($query);
+	$stmt = $this->pdo->prepare($query);
         
         $stmt->execute($params);
         

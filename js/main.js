@@ -1,5 +1,6 @@
   $(document).ready(function(){
-    var $container = $('#services');
+
+	var $container = $('#services');
             $container.isotope({
             itemSelector: '.service_columns'
           });
@@ -23,24 +24,7 @@
             alert("I don't do anything yet");
           });
             
-      // ..find all input tags with type 'date'..
-        $('input[type=date]')
-        // ..and activate the 'datepicker' plugin on those dates
-        .datepicker(
-          // This object allows optional configuration settings to be specified..
-          {
-            // ..such as the format of the dates
-            dateFormat: 'mm/dd/yy',
-            
-            // ..or responses to events on the datepicker, such as a date being selected
-            onSelect: function()
-            {
-              /*  This causes the validator plugin to validate
-                the form again when a new date is selected */
-              //jQuery(this.form).validate().form();
-            }
-          }
-        );
+      
         
         /* Activate jQuery validate plugin */
   

@@ -400,7 +400,7 @@ static public function getPortfolioList()
       $table = 'portfolio';
 
       //pass field name and content into $params array
-      $params = array('project_date'=>$date);
+      $params = array('project_date'=>$date);	
 
       //update row in table
       if($db->update($table,$id,$params)){
@@ -419,15 +419,16 @@ static public function getPortfolioList()
 
       //build query to select project from database
       $query = "SELECT * FROM portfolio WHERE id=:id LIMIT 1";
-
+      
       //fetch row from array 
       $row = $db->fetch($query, $params);
     
       // See if the project was found
       if($row){
         //return the date field
-        return $row->portfolio_date;  
+        return $row->project_date;  
       }else{
+
        return false;
       } 
     }

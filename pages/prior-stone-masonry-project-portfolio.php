@@ -4,7 +4,7 @@
         <?php
         if( $user_id = security::get_user_id() )
         {  
-         echo '<a id="add_port" href="'.$home_url.'?page=add"><img src="'.$home_url.'images/add.png" title="add a new portfolio item"/></a>';
+         echo '<a id="add_port" href="'.$home_url.'?page=add"><img src="'.$home_url.'images/add.png" class="icon" title="add a new portfolio item"/></a>';
         }
         ?>
         <?php

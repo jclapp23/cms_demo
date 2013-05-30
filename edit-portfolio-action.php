@@ -51,7 +51,7 @@ $home_url = HOME;
   
   //update new items in the portfolio table and return newly created project id
   
-  service::updateServiceKeyword($project_id,$service_keyword);
+  services::updateServiceKeyword($project_id,$service_keyword);
   portfolio_item::updateProjectDate($project_id,$project_date);
   portfolio_item::updatePortfolioDescription($project_id,addslashes($portfolio_description));
   
